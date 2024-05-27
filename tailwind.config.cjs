@@ -11,6 +11,7 @@ module.exports = {
       blå400: "#0081A8",
       blå500: "#004155",
       lyseblå200: "#E2EAEE",
+      lyseblå800: "#3B5563",
       grøn100: "#D3E4E0",
       lysegrøn700: "#648C7F",
       lysegrøn300: "#D8E3E0",
