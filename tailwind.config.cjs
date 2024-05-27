@@ -15,6 +15,7 @@ module.exports = {
       lysegrøn700: "#648C7F",
       lysegrøn300: "#D8E3E0",
       lysebrun100: "#E0DAD6",
+      lysebrun50: "#F0ECEB",
     },
     extend: {
       fontFamily: {
