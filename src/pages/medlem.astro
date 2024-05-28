@@ -1,0 +1,36 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import NaturalForm from "../components/NaturalForm.astro"
+---
+<MainLayout>
+<section class="md:grid grid-cols-2 bg-teal-700 px-10">
+<section class="pb-10 pt-20">
+<NaturalForm></NaturalForm>
+</section>
+
+<section class="md:pt-20 md:mx-5 text-white">
+    <h1 class="text-2xl md:text-4xl mb-6">Bliv medlem af Danmarks Naturfredningsforening</h1>
+
+    <div>
+        <h3 class="text-lg md:text-2xl mb-2 pt-6">
+            Dine Medlemsfordele
+        </h3>
+    </div>
+
+    <div class="pb-10 md:mr-20">
+        <h4 class="font-bold">Bliv guidet i naturen</h4>
+        <p>Adgang til over 1.000 gratis ture ud i den danske natur - hvert år og i hele landet.</p>
+    </div>
+
+    <div class="pb-10 md:mr-20">
+        <h4 class="font-bold">Gode rabatter</h4>
+        <p>Bl.a. medlemsrabat i vores webshop på lækre og miljøvenlige produkter.</p>
+    </div>
+
+    <div class="pb-10 md:mr-20">
+        <h4 class="font-bold">Masser af viden og inspiration</h4>
+        <p>Danmarks største naturmagasin, Natur & Miljø, tilsendt fire gange om året.</p>
+    </div>
+</section>
+</section>
+</MainLayout>

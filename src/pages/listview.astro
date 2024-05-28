@@ -1,0 +1,69 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Lists from "../components/Lists.astro";
+import Medlemsfordele from "../components/Medlemsfordele.astro";
+---
+
+<MainLayout>
+
+    <section class="relative w-full h-full">
+        <img src="/public/coveromos.png" alt="coverbillede" class="w-full h-auto">
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4">
+            <h1 class="font-Lato text-lg md:text-4xl mb-6 mx-8 pt-10">Vi arbejder for mere natur, renere miljø og en bæredygtig fremtid</h1>
+            <h3 class="text-base font-lato font-extralight md:text-2xl pb-10 mx-8">Læs om Danmarks Naturfredningsforenings grønne mærkesager her</h3>
+        </div>
+    </section>
+
+<section class="mx-10 grid grid-cols-1 gap-10 md:grid-cols-3 md:mx-36 md:gap-10 pt-10">
+
+    <Lists header="Rent drikkevand" text="Vi skal beskytte drikkevandet mod pesticider og andre giftstoffer.">
+	<img src="/rent_drikkevand.jpg" alt="rent drikkevand"></Lists>
+
+  <Lists header="Bæredygtighed" text="Produktion og forbrug skal ikke belaste klimaet og forurene vores natur og miljø.">
+	<img src="/bæredygtighed.jpg" alt="bæredygtighed"></Lists>
+
+      <Lists header="Klima" text="Naturen er en nøglefaktor, hvis vi skal løse klimakrisen.">
+	<img src="/klima.jpg" alt="klima"></Lists>
+
+      <Lists header="Havet" text="Naturen i havet er helt unik. Men haver er truet af landbrug, intensivt fiskeri og forurening.">
+	<img src="/havet.jpg" alt="havet"></Lists>
+
+      <Lists header="Biodiversitet" text="Planter og dyr forsvinder med større hast end nogensinde før.">
+	<img src="/biodiversitet.jpg" alt="biodiversitet"></Lists>
+
+      <Lists header="Truede Dyr" text="Læs mere om nogle af de pattedyr, fugle, vilde bier og sommerfugle, som er ved at uddø.">
+	<img src="/truede_dyr.jpg" alt="truede dyr"></Lists>
+
+      <Lists header="Kyster" text="Danmarks frie kyster er enestående. Vi har passet på dem siden 1911.">
+	<img src="/kyster.jpg" alt="kyster"></Lists>
+
+      <Lists header="Fri Natur" text="Vi skal passe på den sidste frie natur vi har - og alle skal have adgang til naturen.">
+	<img src="/fri_natur.jpg" alt="fri natur"></Lists>
+
+      <Lists header="PFAS" text="Forurening med PFAS har vist sig at være et kæmpe miljøproblem i Danmark.">
+	<img src="/pfas.jpg" alt="pfas"></Lists>
+
+      <Lists header="Energi" text="Fremtidens energi er 100 procent vedvarende.">
+	<img src="/energi.jpg" alt="energi"></Lists>
+
+      <Lists header="Landbrug" text="Plads til naturen og sunde fødevarer.">
+	<img src="/landbrug.jpg" alt="landbrug"></Lists>
+
+      <Lists header="Skov" text="Skovene skal være gode levesteder for dyr og planter.">
+	<img src="/skov.jpg" alt="skov"></Lists>
+
+      <Lists header="Vand" text="Vi skal passe på hav, søer og vandløb.">
+	<img src="/vand.jpg" alt="vand"></Lists>
+
+      <Lists header="Børn" text="Vores børn skal ud i naturen.">
+	<img src="/børn.jpg" alt="børn"></Lists>
+
+      <Lists header="Nationalparker" text="Naturen får førsteprioritet, og rigere naturoplevelser venter.">
+	<img src="/naturnationalparker.jpg" alt="nationalparker"></Lists>
+
+</section>
+
+<section>
+    <Medlemsfordele></Medlemsfordele>
+</section>
+</MainLayout>

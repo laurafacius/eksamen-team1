@@ -1,0 +1,39 @@
+<form class="grid grid-cols-1 gap-7 md:gap-16 px-10 rounded-2xl md:mx-10 pt-6 md:pt-10 pb-10 bg-green-50 font-lato">
+    <h2 class="md:text-3xl text-lg font-bold">Bliv Medlem for et valgfrit beløb månedeligt</h2>
+    
+    <div class="w-1/1">
+            <label class="md:text-2xl text-base font-medium" for="name">Mit navn er</label>
+            <input type="text" id="name" name="name" value="" class="md:text-2xl text-base border-b-2 border-x-0 border-t-0 bg-transparent" placeholder="Jens Jensen" >
+        </div>
+
+
+          <div class="mb-4 flex items-center">
+                <label for="donationAmount" class="w-1/1 md:text-2xl text-base font-medium">Jeg vil gerne donére</label>
+                <select id="donationAmount" class="input-underline flex-1 p-2 mr-2 md:text-2xl text-base border-b-2 border-x-0 border-t-0 bg-transparent text-center font-medium text-zinc-400">
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="150">150</option>
+                    <option value="other">Andet</option>
+                </select>
+                <span class="md:text-2xl text-base">kr. om måneden</span>
+         </div>
+
+        <div class="w-1/1">
+            <label class="md:text-2xl text-base font-medium" for="email">Min Email er:</label>
+            <input type="email" id="email" name="email" value="" class="md:text-2xl text-base border-b-2 border-x-0 border-t-0 bg-transparent" placeholder="jensjensen@gmail.dk" >
+        </div>
+
+          <div>
+            <span class="text-base font-medium mr-10">Vælg Betalingsmetode:</span>
+            <input type="radio" id="betalingskort" name="betalingskort">
+            <label for="betalingskort" class="text-sm mr-6">Betalingskort</label>
+            <input type="radio" id="mobilepay" name="moiblepay">
+            <label for="mobilepay" class="text-sm mr-6"> MobilePay</label>
+        </div>
+
+<!-- <div class="flex justify-end">
+            <label for="submit"></label>
+			<Button variant="primary" size="small" type="submit" id="submit" name="submit">Fortsæt</Button>
+        </div> -->
+
+    </form>

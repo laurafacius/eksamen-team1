@@ -1,0 +1,18 @@
+---
+const header = Astro.props.header
+const text = Astro.props.text
+import Button from "../components/Button.astro"
+---
+<article class="bg-green-200 grid grid-cols-1 rounded-xl">
+
+<div>
+    <slot/>
+</div>
+
+<div class=" pt-4 mx-8 mb-5 md:pt-5 md:mx-10 md:mb-10 font-lato">
+    <h4 class="text-base font-bold pb-3 md:text-2xl">{header}</h4>
+    <p class="text-xs md:text-base pb-8 md:pb-8">{text}</p>
+    <Button></Button>
+</div>
+
+</article>
