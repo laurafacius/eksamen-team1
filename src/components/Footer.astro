@@ -1,6 +1,40 @@
 ---
+import Button from '../components/Button.astro';
 ---
-<div>
-<p>Footer</p>
+<article class="bg-lyseblå800 md:grid grid-cols-2 pt-10 md:pt-10 md:pl-20 md:pr-20 font-Lato">
+<section class="pl-20 pb-20">
+<h3 class="text-lg font-bold text-white pb-5">Kontak Os</h3>
+<p class="text-white text-sm">Mail: dn@dn.dk</p>
+<p class="text-white text-sm"> Tlf. Receptionen: +45 39 17 40 00 (Man-Fre kl. 9-16)</p>
+<p class="text-white text-sm pb-5 md:pb-10"> Tlf. Medlemsfordele: +45 39 17 40 40 (Man-Fre kl. 9-16)</p>
+<p class="text-white text-sm"> Adresse: Masnedøgade 20, 2100 København Ø</p>
+<div class="grid grid-cols-4 gap-2 w-36 pt-7 md:pt-20">
+    <img src="/instagram.svg" alt="instagram logo">
+    <img src="/facebook.svg" alt="facebook logo">
+    <img src="/linkedin.svg" alt="linkedin logo">
+    <img src="/youtube.svg" alt="youtube logo">
 </div>
+</section>
+
+<section class="pl-20 pr-20 pb-16 md:pl-32 md:pr-32">
+    <h3 class="text-white text-m lg:text-xl font-semibold">Tilmeld dig vores Nyhedsbrev!</h3>
+    <p class="text-white text-sm pt-2">Følg med i vores arbejde mod plastikforurening, og hold dig opdateret med de seneste nyheder</p>
+   <div class="grid grid-cols-1">
+            
+            <input type="text" id="name" name="name" value="" class="rounded-lg p-1 pl-3 pr-3 mb-3 mt-3" placeholder="Dit Fornavn" >
+            <input type="email" id="email" name="email" value="" class="rounded-lg p-1 pl-3 pr-3" placeholder="DinEmail@gmail.dk" >
+
+        </div>
+         <div class="flex justify-center">
+            <label for="submit"></label>
+			<Button variant="secondary" size="medium" type="submit" id="submit" name="submit">Tilmeld</Button>
+        </div>
+<div class="grid justify-end pt-6">
+         <img src="minilogo.svg" alt="lille logo">
+        </div>
+        
+</section>
+        
+
+</article>
   
