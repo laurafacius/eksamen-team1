@@ -1,16 +1,74 @@
----
----
-<header >
-  <div>
-    <a href="/"><img id="logo" src="/img/logo_hjem_sort.svg" alt="logo" /></a>
-  </div>
-  <nav>
-    <ul class="menu">
-      <li><a href="/omos/">Om os</a></li>
-
-
-
-    </ul>
-  </nav>
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<header>
+<!-- Navigation-1 -->
+ <div x-data="{ showmenu: false }" class="p-4 fixed top-0 left-0 w-full bg-white md:bg-transparent md:hover:bg-white transition-colors duration-300 z-50 group">
+    <div id="navbar" class="flex flex-row justify-between">
+        <div id="logo" class="z-10">
+            <a href="dn_logo2.svg"> <img src="dn_logo2.svg" alt="" class="h-10 w-20 mr-2 md:h-20 md:w-28 md:ml-5"> </a>
+        </div>
+        <nav id="desktopmenu" class="hidden lg:block z-10 text-white font-Lato pt-8 pr-5">
+            <ul class="flex flex-row gap-14">
+                <li class="group-hover:text-blå500"><a href="/singleview">Vi arbejder for</a></li>
+                <li class="group-hover:text-blå500"><a href="#link2">Om os</a></li>
+                <li class="group-hover:text-blå500"><a href="#link3">Oplev naturen</a></li>
+                <li class="group-hover:text-blå500"><a href="#link4">Bliv frivillig</a></li>
+                <li class="group-hover:text-blå500"><a href="#link2">Afdelinger</a></li>
+                <li class="group-hover:text-blå500"><a href="#link3">Nyheder</a></li>
+                <li class="group-hover:text-blå500"><a href="#link4">Arrangementer</a></li>     
+        </nav>
+        <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu" class="">Menu</button>
+    </div>
+    <nav id="mobilmenu" class=" z-10 flex flex-col content-center pt-4" 
+    x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+        <ul >
+            <li class="text-center text-blå500 font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#">Vi arbejder for</a></li>
+            <li class="text-center text-blå500 font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Om os</a></li>
+            <li class="text-center text-blå500 font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Oplev naturen</a></li>
+            <li class="text-center text-blå500 font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Bliv frivillig</a></li>
+            <li class="text-center text-blå500 font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Afdelinger</a></li>
+            <li class="text-center text-blå500 font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Nyheder</a></li>
+            <li class="text-center text-blå500 font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Arrangementer</a></li>
+        </ul>
+    </nav>
+</div>
 </header>
+
+<!-- Navigation-2
+<div x-data="{ showmenu: false }" class="p-4 fixed top-0 left-0 w-full bg-white z-50 group">
+    <div id="navbar" class="flex flex-row justify-between">
+        <div id="logo" class="z-10">
+            <a href="dn_logo2.svg"> <img src="dn_logo2.svg" alt="" class="h-10 w-20 mr-2 md:h-20 md:w-28 md:ml-5"> </a>
+        </div>
+        <nav id="desktopmenu" class="hidden lg:block z-10 text-blue font-Lato pt-8 pr-5">
+            <ul class="flex flex-row gap-14">
+                <li ><a href="#link1">Vi arbejder for</a></li>
+                <li ><a href="#link2">Om os</a></li>
+                <li ><a href="#link3">Oplev naturen</a></li>
+                <li ><a href="#link4">Bliv frivillig</a></li>
+                <li ><a href="#link2">Afdelinger</a></li>
+                <li ><a href="#link3">Nyheder</a></li>
+                <li > <a href="#link4">Arrangementer</a></li>     
+        </nav>
+        <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu" class="">Menu</button>
+    </div>
+    <nav id="mobilmenu" class=" z-10 flex flex-col content-center pt-4" 
+    x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+        <ul >
+            <li class="text-center text-blue font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Vi arbejder for</a></li>
+            <li class="text-center text-blue font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Om os</a></li>
+            <li class="text-center text-blue font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Oplev naturen</a></li>
+            <li class="text-center text-blue font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Bliv frivillig</a></li>
+            <li class="text-center text-blue font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Afdelinger</a></li>
+            <li class="text-center text-blue font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Nyheder</a></li>
+            <li class="text-center text-blue font-Lato py-2 border-y-2 group-hover:text-blue"><a href="#link1">Arrangementer</a></li>
+        </ul>
+    </nav>
+</div> -->
 

@@ -1,0 +1,103 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<MainLayout title="Singleview">
+	
+</MainLayout>
+
+	<!-- Baggrund  -->
+    <div class="relative h-80 bg-cover bg-center" style="background-image: url('singlehero.webp');">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <h1 class="text-white font-Lato md:text-2xl text-lg font-normal ">Sammen kan vi sikre fremtidens rene drikkevand</h1>
+        </div>
+    </div>
+
+
+<!-- section-1 -->
+    <div class="bg-lyseblå200 p-10">
+        <div class="max-w-5xl mx-auto bg-blå500 rounded-lg  overflow-hidden flex flex-col md:flex-row">
+            <div class="w-full md:w-2/3 p-6">
+                <h2 class="text-3xl text-white font-Lato font-bold mb-4">Vores drikkevand er under pres</h2>
+                <div class="text-base text-white font-Lato leading-loose">
+                    <p>
+                        Over halvdelen af de danske drikkevandsboringer er nu forurenet med pesticider og PFAS. Danmark er kendt for sit rene drikkevand, som kan drikkes efter simpel filtrering og iltning – uden kemikalier, men denne ressource er truet. HOFOR, Danmarks største vandværk, står over for store udfordringer, da to ud af tre boringer er forurenet.
+                    </p>
+                    <p class="pt-6">
+                        For at beskytte vores drikkevand skal vi øge overvågningen, skærpe reglerne for pesticider og investere i avanceret filtreringsteknologi.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3">
+                <img src="/vandsec1.webp" alt="Nature Image" class="object-cover h-full w-full">
+            </div>
+        </div>
+    </div>
+
+
+<!-- section-2 -->
+   <div class="md:bg-lyseblå200">
+        <div class="max-w-6xl mx-auto py-10 px-5 text-center">
+            <h3 class="text-2xl font-bold text-blue mb-6">Sådan redder vi drikkevandet!</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10  ">
+                
+                <div class="bg-white p-5 m-1 rounded-lg">
+                    <img src="gift.svg" alt="Icon 1" class="mx-auto mb-4 h-12">
+                    <p class="leading-loose font-Lato text-blå500">Det skal være forbudt at bruge pesticider og anden gift på sårbare områder omkring drikkevandsboringer.</p>
+                </div>
+
+                <div class="bg-white p-5 m-1 rounded-lg">
+                    <img src="areal.svg" alt="Icon 2" class="mx-auto mb-4 h-12">
+                    <p class="leading-loose font-Lato text-blå500">200.000 hektar, skal være grundvandsparker: Områder med økologi, vedvarende energi eller natur, hvor der ikke må sprøjtes med gift.</p>
+                </div>
+
+                <div class="bg-white p-5 m-1 rounded-lg">
+                    <img src="forbud.svg" alt="Icon 3" class="mx-auto mb-4 h-12">
+                    <p class="leading-loose font-Lato text-blå500">Et nationalt forbud mod PFAS og en konkret plan for at udfase alle flourstoffer.</p>
+                </div>
+            </div>
+
+                <button type="submit" class="bg-gul500 text-blue font-Lato font-semibold py-2 px-4 rounded-3xl w-48 mt-10 mx-auto flex items-center justify-center col-span-1 md:col-span-3 shadow-lg">
+                <img src="button.svg" alt="ikon" class="h-5 w-5 mr-2">
+                Bliv aktiv
+            </button>
+            </div>
+        </div>
+
+<!-- Section-3 -->
+<div class="md:grid grid-cols-2 gap-0 text-left">
+    <div class="bg-white flex items-center ">
+        <div class="bg-white p-6  md:rounded-lg  max-w-2xl mx-auto">
+            <div class="flex items-center space-x-4">
+                <img src="/walter.png" alt="Walter Brüsch" class="w-24 h-24">
+                <div>
+                    <h2 class="text-1xl text-black font-Lato font-bold">Walter Brüsch</h2>
+                    <p class="text-gray-600 font-Lato text-m">Politisk rådgiver, geologi, grundvand og sprøjtegift</p>
+                </div>
+            </div>
+            <p class="mt-6 text-black font-Lato italic leading-loose">
+                “Der er langt flere rester af gift i vores grundvand, end vi hidtil har troet. Siden 2020 er der blevet fundet rester af gift i over halvdelen af prøverne fra vandværkernes drikkevandsboringer.”
+            </p>
+        </div>
+    </div>
+    <div class="infogram-embed" data-id="9d06153f-e4cc-4162-9318-ac5cee4d8f2a" data-type="interactive" data-title="Drikkevandsgraf"></div><script>!function(e,n,i,s){var d="InfogramEmbeds";var o=e.getElementsByTagName(n)[0];if(window[d]&&window[d].initialized)window[d].process&&window[d].process();else if(!e.getElementById(i)){var r=e.createElement(n);r.async=1,r.id=i,r.src=s,o.parentNode.insertBefore(r,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script>
+</div>
+
+
+<div class="bg-grøn100 text-center p-10">
+    <h4 class="md:text-3xl text-lg text-blå500 font-Lato font-bold mb-4">Hvor høj er andelen af drikkevandsboringer med giftrester i din kommune?</h4>
+
+    <div class="flex items-center justify-center p-10">
+        <img src="/denmark.svg" alt="Danmark drikkevand" class="md:max-w-md max-h-md object-cover ">
+    </div>
+   
+<div class="text-center text-xs text-blå500 font-Lato p-10 leading-normal">
+    <p>
+        Andel af aktive drikkevandsboringer, hvor der i perioden 15/9 2017 til 15/9 2022 er fundet pesticidrester. Kilde: DN
+    </p>
+</div>  
+   
+    
