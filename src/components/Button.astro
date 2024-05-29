@@ -1,5 +1,28 @@
 ---
+// Henter parametrene fra Astro.props
+const { variant = "primary", size = "medium" } = Astro.props;
+
+// Definer den styling (Tailwind classes), der gør sig gældende for alle knapper
+const buttonStyling = "font-Lato flex justify-center items-center space-x-2 transition-transform duration-300";
+
+// Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter
+const variantClasses = {
+  "primary": "bg-gul500 text-black rounded-full hover:scale-105", 
+  "secondary": "bg-blå400 text-white rounded-full hover:scale-105",
+};
+
+// Definer den styling (Tailwind classes), der gør sig gældende for de forskellige størrelser
+const sizeClasses = {
+  "medium": "py-2 px-4 text-sm md:py-3 md:px-20 md:text-base",
+  "large": "py-3 px-6 text-base md:py-3 md:px-28 md:text-lg",
+};
+
+// Bestem hvilket SVG-ikon der skal vises baseret på varianten
+const svgSrc = variant === "primary" ? "/public/pil.svg" : "/public/pilhvid.svg";
+
 ---
-<div>
-    <button><slot /></button>
-</div>
+
+  <button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}>
+    <img src={svgSrc} alt="Pil" class="w-4 h-4 md:w-6 md:h-6" />
+    <slot />
+  </button>
