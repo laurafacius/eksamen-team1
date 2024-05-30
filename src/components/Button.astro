@@ -1,4 +1,6 @@
 ---
+const text = Astro.props.text
+
 // Henter parametrene fra Astro.props
 const { variant = "primary", size = "medium" } = Astro.props;
 
@@ -13,7 +15,7 @@ const variantClasses = {
 
 // Definer den styling (Tailwind classes), der gør sig gældende for de forskellige størrelser
 const sizeClasses = {
-  "small": "font-bold py-1.5 rounded-3xl w-48 ",
+  "small": "py-1.5 rounded-3xl w-48 ",
   "medium": "py-2 px-4 text-sm md:py-3 md:px-16 md:text-base",
   "large": "py-3 px-6 text-base md:py-3 md:px-28 md:text-lg",
 };
@@ -23,7 +25,7 @@ const svgSrc = variant === "primary" ? "/pil.svg" : "/pilhvid.svg";
 
 ---
 
-  <button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}>
-    <img src={svgSrc} alt="Pil" class="w-4 h-4 md:w-8 md:h-8 gap-x-5" />
+  <button  class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}>
+    <img src={svgSrc} alt="Pil" class="w-4 h-4 md:w-8 md:h-8 gap-x-5" />{text}
     <slot />
   </button>

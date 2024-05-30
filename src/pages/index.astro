@@ -2,11 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 ---
-
-<id></id>
-
-<MainLayout title="Forside">
-	
+<MainLayout>
 	<!-- Baggrund  -->
     <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('/bg3.webp');">
 		
@@ -88,7 +84,7 @@ import Button from '../components/Button.astro';
                                 <img src="public/button.svg" alt="ikon" class="h-5 w-5 mr-2">
                                 Bliv Medlem
                             </button> -->
-                            <Button variant="primary" size="small" type="submit" id="submit" name="submit">Bliv medlem</Button>
+                            <Button variant="primary" size="small" type="submit" id="submit" name="submit" text="ikke mere tak jeg er træt"></Button>
                         </form>
                     </div>
                 </div>
@@ -102,7 +98,6 @@ import Button from '../components/Button.astro';
         <div class="relative w-full h-full flex flex-col-reverse md:flex-row">
             
             <div class="bg-cover bg-center w-full md:w-1/2 h-64 md:h-screen" style="background-image: url('/sec2.webp');"></div>
-    
             
             <div class="relative w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center md:pl-32">
                 <div class="flex flex-col md:flex-row md:absolute md:transform md:-translate-x-1/4 space-y-0 md:space-x-5 ">
