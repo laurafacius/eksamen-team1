@@ -1,3 +1,7 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+---
 <form class="grid grid-cols-1 gap-7 md:gap-16 px-10 rounded-2xl md:mx-10 pt-6 md:pt-10 pb-10 bg-lyseblå200 font-lato">
     <h2 class="md:text-3xl text-lg font-bold">Bliv Medlem for et valgfrit beløb månedeligt</h2>
     
@@ -31,9 +35,6 @@
             <label for="mobilepay" class="text-sm mr-6"> MobilePay</label>
         </div>
 
-<!-- <div class="flex justify-end">
-            <label for="submit"></label>
-			<Button variant="primary" size="small" type="submit" id="submit" name="submit">Fortsæt</Button>
-        </div> -->
+      <Button variant="primary" size="medium" type="submit" id="submit" name="submit" text="Blev medlem"></Button>
 
     </form>
