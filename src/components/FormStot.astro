@@ -1,6 +1,12 @@
+---
+const fos = Astro.props.fos
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from './Button.astro';
+---
+
 <div class="z-10">
     <div class="bg-lysegrøn300 md:bg-opacity-80 p-7 md:rounded-lg shadow-lg md:w-96">
-        <h2 class="text-2xl font-bold font-Lato mb-10">Bliv Medlem</h2>
+        <h2 class="text-2xl font-bold font-Lato mb-10">{fos}</h2>
         <form action="#">
             <div class="mb-4">
                 <label class="block text-blå500 font-Lato font-bold mb-2">Vælg et beløb</label>
@@ -61,8 +67,8 @@
                 <img src="public/button.svg" alt="ikon" class="h-5 w-5 mr-2">
                 Bliv Medlem
             </button> -->
-            <Button variant="primary" size="small" type="submit" id="submit" name="submit">Bliv medlem</Button>
+            <Button variant="primary" size="small" type="submit" id="submit" name="submit" text="Støt nu"></Button>
         </form>
     </div>
-</div>
+
 
