@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
+import Footer from '../components/Footer.astro';
 ---
 <MainLayout>
 	<!-- Baggrund  -->
@@ -246,15 +247,16 @@ import Button from '../components/Button.astro';
         <!-- section-6 -->
         <div class="md:grid grid-cols-2 gap-0 h-screen text-left">
             <!-- Venstre side med h3 og tekst -->
-            <div class="font-Lato text-white flex flex-col items-center justify-center bg-blå500 md:p-20 p-10">
+            <div class="font-Lato text-white flex flex-col items-center justify-center bg-blå400 md:p-20 p-10">
                 <h3 class="md:text-3xl text-xl font-bold mb-8 leading-normal">Vi arbejder for naturen, en bæredygtig fremtid og et klima i balance</h3>
                 <p class="text-lg leading-loose">
                     Naturen har brug for hjælp, fordi mange naturområder risikerer at gro til og miste deres unikke levesteder. Du kan bidrage ved at deltage i Danmarks Naturfredningsforenings naturplejeprojekter og lære, hvordan du plejer naturen lokalt. Meld dig ind i foreningens netværk for at udveksle viden og erfaringer med andre naturplejeentusiaster.​ 
                 </p>
             </div>
         
-            <div class="relative overflow-hidden bg-blå500">
+            <div class="relative overflow-hidden bg-blå400">
                 <img src="infog.svg" alt="info grafik" class="w-full h-full ">
             </div>
         </div>
+        <Footer></Footer>
 </MainLayout>
