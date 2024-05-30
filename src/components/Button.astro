@@ -1,4 +1,6 @@
 ---
+const text = Astro.props.text
+
 // Henter parametrene fra Astro.props
 const { variant = "primary", size = "medium" } = Astro.props;
 
@@ -23,7 +25,7 @@ const svgSrc = variant === "primary" ? "public/pil.svg" : "/public/pilhvid.svg";
 
 ---
 
-  <button class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}>
-    <img src={svgSrc} alt="Pil" class="w-4 h-4 md:w-8 md:h-8 gap-x-5" />
+  <button  class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}>
+    <img src={svgSrc} alt="Pil" class="w-4 h-4 md:w-8 md:h-8 gap-x-5" />{text}
     <slot />
   </button>
