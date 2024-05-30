@@ -1,6 +1,9 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
 ---
+
+<id></id>
 
 <MainLayout title="Forside">
 	
@@ -81,10 +84,11 @@ import MainLayout from "../layouts/MainLayout.astro";
                                     </label>
                                 </class=>
                             </div>
-                            <button type="submit" class="bg-gul500 shadow-lg text-blue font-Lato font-semibold py-2 px-4 rounded-3xl w-48 flex items-center justify-center">
+                            <!-- <button type="submit" class="bg-gul500 shadow-lg text-blue font-Lato font-semibold py-2 px-4 rounded-3xl w-48 flex items-center justify-center">
                                 <img src="public/button.svg" alt="ikon" class="h-5 w-5 mr-2">
                                 Bliv Medlem
-                            </button>
+                            </button> -->
+                            <Button variant="primary" size="small" type="submit" id="submit" name="submit">Bliv medlem</Button>
                         </form>
                     </div>
                 </div>
@@ -100,38 +104,41 @@ import MainLayout from "../layouts/MainLayout.astro";
             <div class="bg-cover bg-center w-full md:w-1/2 h-64 md:h-screen" style="background-image: url('/sec2.webp');"></div>
     
             
-            <div class="relative w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center">
-                <div class="flex flex-col md:flex-row md:absolute md:left-32 md:transform md:-translate-x-1/4 space-y-0 md:space-x-4">
+            <div class="relative w-full md:w-1/2 h-auto md:h-screen flex items-center justify-center md:pl-32">
+                <div class="flex flex-col md:flex-row md:absolute md:transform md:-translate-x-1/4 space-y-0 md:space-x-5 ">
                     
-                    <div class="bg-guld100 md:bg-lysebrun100 md:rounded-lg shadow-lg p-5  h-100 w-100 md:h-96 md:w-64 flex flex-col items-center text-center ">
+                    <div class="bg-guld100 md:bg-lysebrun100 md:rounded-lg shadow-lg p-5 h-100 w-100 md:h-100 flex flex-col items-center text-center ">
                         <div class="p-4 mb-4">
-                            <img src="mærke.svg" alt="Ikon" class="w-16 h-16">
+                            <img src="vandicon.svg" alt="Ikon" class="w-16 h-16">
                         </div>
                         <h2 class="text-xl text-blå500 font-bold font-Lato mb-2">Mere liv i havet</h2>
                         <p class="text-blå500 font-Lato leading-loose">
                             Vi arbejder for mere liv i danske have og for at beskytte 30% af havet omkring Danmark i tråd med FN's Biodiversitetskonvention.
+                        </p>
+                    </div>
+
+                    
+    
+                    <div class="bg-guld200 md:bg-lysebrun100  md:rounded-lg shadow-lg p-5  h-100 w-100 md:h-100 flex flex-col items-center text-center ">
+                        <div class="p-4 mb-4">
+                            <img src="gifticon.svg" alt="Ikon" class="w-16 h-16">
+                        </div>
+                        <h2 class="text-xl text-blå500 font-bold font-Lato mb-2">Mere liv i havet</h2>
+                        <p class="text-blå500 font-Lato leading-loose">
+                            Vi arbejder for at beskytte drikke-vandet ved at forbyde pesticider og gift i grundvandsområder og ved drikkevandsboringer.
                         </p>
                     </div>
     
-                    <div class="bg-guld200 md:bg-lysebrun100  md:rounded-lg shadow-lg p-5  h-100 w-100 md:h-96 flex flex-col items-center text-center">
+                    <div class="bg-guld300 md:bg-lysebrun100 md:rounded-lg shadow-lg p-5 h-100 w-100 md:h-100 flex flex-col items-center text-center ">
                         <div class="p-4 mb-4">
-                            <img src="mærke.svg" alt="Ikon" class="w-16 h-16">
+                            <img src="skraldicon.svg" alt="Ikon" class="w-16 h-16">
                         </div>
-                        <h2 class="text-xl text-blå500 font-bold font-Lato mb-2">Mere liv i havet</h2>
+                        <h2 class="text-xl text-blå500 font-bold font-Lato mb-2 ">Mere liv i havet</h2>
                         <p class="text-blå500 font-Lato leading-loose">
-                            Vi arbejder for mere liv i danske have og for at beskytte 30% af havet omkring Danmark i tråd med FN's Biodiversitetskonvention.
+                            Vi arbejder for et affaldsfrit Danmark inden 2050 og for at stoppe brug-og-smid-væk-kulturen for at beskytte klimaet og naturen.
                         </p>
                     </div>
-    
-                    <div class="bg-guld300 md:bg-lysebrun100 md:rounded-lg shadow-lg p-5  h-100 w-100 md:h-96 flex flex-col items-center text-center">
-                        <div class="p-4 mb-4">
-                            <img src="mærke.svg" alt="Ikon" class="w-16 h-16">
-                        </div>
-                        <h2 class="text-xl text-blå500 font-bold font-Lato mb-2">Mere liv i havet</h2>
-                        <p class="text-blå500 font-Lato leading-loose">
-                            Vi arbejder for mere liv i danske have og for at beskytte 30% af havet omkring Danmark i tråd med FN's Biodiversitetskonvention.
-                        </p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -147,10 +154,13 @@ import MainLayout from "../layouts/MainLayout.astro";
             <p class="text-lg leading-loose ">
                 Danmarks Naturfredningsforening er landets største grønne organisation med over 135.000 medlemmer og 1.500 frivillige. Vi arbejder for at bevare Danmarks natur og kan som de eneste rejse fredningssager. Vores indsats har allerede sikret, at cirka fem procent af Danmarks areal er fredet.
             </p>
-            <button type="submit" class="bg-gul500 shadow-lg  text-blå500 font-Lato font-semibold py-2 px-4 rounded-3xl w-48 mt-10 flex items-center justify-center">
+            <!-- <button type="submit" class="bg-gul500 shadow-lg  text-blå500 font-Lato font-semibold py-2 px-4 rounded-3xl w-48 mt-10 flex items-center justify-center">
                 <img src="/button.svg" alt="ikon" class="h-5 w-5 mr-2">
                 Læs mere her
-            </button>
+            </button> -->
+            <div class="mt-10">
+                <Button variant="primary" size="medium" type="submit" id="submit" name="submit">Læs mere her</Button>
+            </div>
         </div>
         
     
@@ -226,10 +236,11 @@ import MainLayout from "../layouts/MainLayout.astro";
                                         <span class="ml-2 font-Lato text-blue">Mobilepay</span>
                                     </label>
                                 </div>
-                                <button type="submit" class="bg-gul500 shadow-lg  text-blue font-Lato font-semibold py-2 px-4 rounded-3xl w-48 flex items-center justify-center">
+                                <!-- <button type="submit" class="bg-gul500 shadow-lg  text-blue font-Lato font-semibold py-2 px-4 rounded-3xl w-48 flex items-center justify-center">
                                     <img src="public/button.svg" alt="ikon" class="h-5 w-5 mr-2">
                                     Støt nu
-                                </button>
+                                </button> -->
+                                <Button variant="primary" size="small" type="submit" id="submit" name="submit">Støt nu</Button>
                             </form>
                         </div>
                     </div>
